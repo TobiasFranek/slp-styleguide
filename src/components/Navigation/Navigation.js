@@ -40,6 +40,14 @@ export default () => {
 					</li>
 				))}
 			</ul>
+			<h2>CSS Methodology</h2>
+			<ul className="gatsby-nav__ul">
+				{nav['methodology'].map((item) => (
+					<li className="gatsby-nav__ul__li">
+						<Link className={typeof window !== "undefined" && window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
+					</li>
+				))}
+			</ul>
 			<h2>Components</h2>
 			<ul className="gatsby-nav__ul">
 				{nav['components'].map((item) => (
