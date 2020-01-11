@@ -29,6 +29,12 @@ h4 {
 	font-weight: 700;
 }
 
+.space-div-20 {
+	div {
+		margin-right: 20px;
+	}
+}
+
 a {
 	color: $primary;
 	transition: all 0.4s ease;
@@ -82,6 +88,16 @@ code[class*="language-"] {
 	margin-bottom: 20px;
 }
 
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+
+
+.flex-container-with-overflow {
+	display: flex;
+	overflow: visible;
+}
+
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 6%) 40px 1fr repeat(5, 10%);
@@ -99,6 +115,10 @@ code[class*="language-"] {
 
 .main-content {
 	grid-area: cn;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
 }
 
 .content {
