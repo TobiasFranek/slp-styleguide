@@ -1,1 +1,48 @@
-@import '../../../node_modules/slp-base/dist/main.css';
+$font-directory: '~slp-base/src/fonts';
+
+@import '~slp-base/src/scss/main.scss';
+
+
+p {
+	font-weight: 300;
+}
+
+h1 {
+	font-weight: 700;
+	font-family: $objectivity;
+	border-bottom: 1px solid $light-grey;
+}
+
+h2 {
+	font-family: $objectivity;
+	font-weight: 300;
+	margin-top: 40px;
+}
+
+h3 {
+	font-family: $objectivity;
+	font-weight: 300;
+}
+
+h4 {
+	font-family: $objectivity;
+	font-weight: 700;
+}
+
+
+.btn {
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.code-with-notes {
+	display: flex;
+	margin: 20px 0;
+	pre {
+		font-size: 14px;
+		margin-right: 20px;
+	}
+	&__note {
+
+	}
+}

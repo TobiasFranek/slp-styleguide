@@ -13,16 +13,18 @@
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-remark-default-html-attrs": "^1.0.0",
+    "gatsby-remark-prismjs": "^3.3.30",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.48",
     "gatsby-transformer-sharp": "^2.3.7",
     "node-sass": "^4.13.0",
+    "prismjs": "^1.18.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "sharp": "^0.23.4",
-    "slp-base": "^1.0.1"
+    "slp-base": "^1.0.4"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

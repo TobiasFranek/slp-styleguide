@@ -27,7 +27,10 @@ This is the Default Button, which means there is no modifier applied, it is main
 			class="icon__svg" 
 			xmlns="http://www.w3.org/2000/svg" 
 			viewBox="0 0 384 512">
-			...
+			<path 
+				fill="currentColor" 
+				d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z">
+			</path>
 		</svg>
 	</span>
 </button>
@@ -166,7 +169,7 @@ Add a modifier to the button icon and you get a floating icon.
 
 #### Notes
 
-This should be used, when there is no label in the button. You should also use this instead of the **primary button**, when you want to use an icon in the button.
+This should be used, when there is no label in the button. You should also use this instead of the **primary button** when you want to use an icon in the button.
 
 </div>
 

@@ -5,3 +5,5 @@
  */
 
 // You can delete this file if you're not using it
+
+require("./node_modules/prismjs/themes/prism-tomorrow.css")
