@@ -43,6 +43,9 @@ export default () => {
 			</ul>
 			<h2>Foundations</h2>
 			<ul className="gatsby-nav__ul">
+				<li className="gatsby-nav__ul__li">
+					<Link activeClassName="active" to="/foundations/colors/">Colors</Link>
+				</li>
 				{buildList(nav['foundations'])}
 			</ul>
 			<h2>CSS Methodology</h2>
