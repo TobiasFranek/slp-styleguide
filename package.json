@@ -13,6 +13,7 @@
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.3.13",
     "gatsby-remark-default-html-attrs": "^1.0.0",
+    "gatsby-remark-images": "^3.1.42",
     "gatsby-remark-prismjs": "^3.3.30",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.48",

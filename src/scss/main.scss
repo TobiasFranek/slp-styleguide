@@ -3,28 +3,28 @@ $font-directory: '~slp-base/src/fonts';
 @import '~slp-base/src/scss/main.scss';
 
 
-p {
+p:not(.p) {
 	font-weight: 300;
 }
 
-h1 {
+h1:not(.h1) {
 	font-weight: 700;
 	font-family: $objectivity;
 	border-bottom: 1px solid $light-grey;
 }
 
-h2 {
+h2:not(.h2) {
 	font-family: $objectivity;
 	font-weight: 300;
 	margin-top: 40px;
 }
 
-h3 {
+h3:not(.h3) {
 	font-family: $objectivity;
 	font-weight: 300;
 }
 
-h4 {
+h4:not(.h4) {
 	font-family: $objectivity;
 	font-weight: 700;
 }
@@ -35,7 +35,7 @@ h4 {
 	}
 }
 
-a {
+a:not(.a) {
 	color: $primary;
 	transition: all 0.4s ease;
 	&:hover {
@@ -44,11 +44,6 @@ a {
 	}
 }
 
-
-.btn {
-	margin-top: 10px;
-	margin-right: 20px;
-}
 
 code[class*="language-"] {
 	font-size: 14px;
@@ -80,8 +75,16 @@ code[class*="language-"] {
 	}
 }
 
+.picture-01 {
+	background-image: url('../images/01.jpg');
+}
+
 .gatsby-highlight {
 	border-radius: 6px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
 }
 
 .margin-bottom-20 {
@@ -94,6 +97,14 @@ code[class*="language-"] {
 
 .margin-top-40 {
 	margin-top: 40px;
+}
+
+.margin-right-20 {
+	margin-right: 20px;
+}
+
+.margin-right-40 {
+	margin-right: 40px;
 }
 
 

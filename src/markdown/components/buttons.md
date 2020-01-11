@@ -12,17 +12,17 @@ category: "components"
 This is the Default Button, which means there is no modifier applied, it is mainly used to reset the browser button style and adding an different hover and focus effect. This button can also be used if you want a button but don't want any styling.
 
 <div class="flex-container">
-<button class="btn">
+<button class="btn margin-right-20 margin-top-10">
 	<span class="btn__item">Default</span>
 </button>
 
-<button class="btn">
+<button class="btn margin-right-20 margin-top-10">
 	<span class="btn__item btn__item--border-bottom">
 		Default
 	</span>
 </button>
 
-<button class="btn">
+<button class="btn margin-right-20 margin-top-10">
 	<span class="btn__item">
 		Text with Icon
 	</span>
@@ -39,7 +39,7 @@ This is the Default Button, which means there is no modifier applied, it is main
 	</span>
 </button>
 
-<button class="btn">
+<button class="btn margin-right-20 margin-top-10">
 	<span class="icon btn__item btn__icon">
 		<svg 
 			class="icon__svg" 
@@ -101,7 +101,7 @@ You can use the modifier **--border-bottom** to lock the focus event. Every item
 
 This is the primary button and should always be used to indicate a certain action (f.e adding a List to the user).
 
-<button class="btn btn--primary">
+<button class="btn btn--primary margin-right-20 margin-top-10">
 	<span class="btn__item">Invite some Friends</span>
 </button>
 
@@ -129,7 +129,7 @@ Add a modifier to the button icon and you get a floating icon.
 
 <div class="flex-container">
 
-<button class="btn">
+<button class="btn margin-right-20 margin-top-10">
 	<span class="btn__item">With Text</span>
 	<span class="icon btn__item btn__icon btn__icon--floating">
 		<svg 
@@ -142,7 +142,7 @@ Add a modifier to the button icon and you get a floating icon.
 </button>
 
 
-<button class="btn">
+<button class="btn margin-right-20 margin-top-10">
 	<span class="icon btn__item btn__icon btn__icon--floating">
 		<svg 
 			class="icon__svg" 
