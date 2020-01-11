@@ -32,11 +32,19 @@ export default () => {
 
 	return (
 		<nav className="gatsby-nav">
+			<h2>Foundations</h2>
+			<ul className="gatsby-nav__ul">
+				{nav['foundations'].map((item) => (
+					<li className="gatsby-nav__ul__li">
+						<Link className={window && window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
+					</li>
+				))}
+			</ul>
 			<h2>Components</h2>
 			<ul className="gatsby-nav__ul">
 				{nav['components'].map((item) => (
 					<li className="gatsby-nav__ul__li">
-						<Link className={window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
+						<Link className={window && window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
 					</li>
 				))}
 			</ul>
