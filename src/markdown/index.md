@@ -7,7 +7,7 @@ category: "index"
 
 # Introduction
 
-This is the Styleguide for the Multimediaproject MMP2a "SLP" 
+This is the Styleguide for the Multimediaproject MMP2a "SLP". It should assure consistent CSS and coding quality for designers and developers on this project.
 
 ## Idea
 

@@ -196,3 +196,16 @@ code[class*="language-"] {
     max-width: 80em;
     padding: 0 em(15);
 }
+
+.gatsby-logo {
+	color: $font-color;
+	padding: 25px 30px;
+	background: #fff;
+	&--white {
+		background: $font-color;
+		color: #fff;
+	}
+	svg {
+		width: 150px;
+	}
+}
