@@ -30,31 +30,25 @@ export default () => {
 		}
 	}
 
+	const buildList = (items) => items.map((item) => (
+		<li className="gatsby-nav__ul__li">
+			<Link activeClassName="active" to={`${item.path}/`}>{item.title}</Link>
+		</li>
+	));
+
 	return (
 		<nav className="gatsby-nav">
 			<h2>Foundations</h2>
 			<ul className="gatsby-nav__ul">
-				{nav['foundations'].map((item) => (
-					<li className="gatsby-nav__ul__li">
-						<Link className={typeof window !== "undefined" && window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
-					</li>
-				))}
+				{buildList(nav['foundations'])}
 			</ul>
 			<h2>CSS Methodology</h2>
 			<ul className="gatsby-nav__ul">
-				{nav['methodology'].map((item) => (
-					<li className="gatsby-nav__ul__li">
-						<Link className={typeof window !== "undefined" && window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
-					</li>
-				))}
+				{buildList(nav['methodology'])}
 			</ul>
 			<h2>Components</h2>
 			<ul className="gatsby-nav__ul">
-				{nav['components'].map((item) => (
-					<li className="gatsby-nav__ul__li">
-						<Link className={typeof window !== "undefined" && window.location.pathname === item.path ? 'active' : ''} to={item.path}>{item.title}</Link>
-					</li>
-				))}
+				{buildList(nav['components'])}
 			</ul>
 		</nav>
 	)
