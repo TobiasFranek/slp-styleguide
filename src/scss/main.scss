@@ -29,10 +29,23 @@ h4 {
 	font-weight: 700;
 }
 
+a {
+	color: $primary;
+	transition: all 0.4s ease;
+	&:hover {
+		color: $secondary;
+		text-decoration: none;
+	}
+}
+
 
 .btn {
 	margin-top: 10px;
 	margin-right: 20px;
+}
+
+code[class*="language-"] {
+	font-size: 14px;
 }
 
 .code-with-notes {
@@ -42,7 +55,6 @@ h4 {
         display: block;
     }
 	pre {
-		font-size: 14px;
 		margin-right: 20px;
 		@include media-breakpoint-down(md) {
 			margin-right: 0;
@@ -53,13 +65,21 @@ h4 {
 			margin-top: 10px;
 		}
 	}
+
+	.gatsby-highlight {
+		max-width: 70%;
+		@include media-breakpoint-down(md) {
+			max-width: 100%;
+		}
+	}
 }
 
 .gatsby-highlight {
-	max-width: 70%;
-	@include media-breakpoint-down(md) {
-        max-width: 100%;
-    }
+	border-radius: 6px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
 }
 
 .wrapper {

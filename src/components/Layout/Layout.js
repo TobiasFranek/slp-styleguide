@@ -1,6 +1,6 @@
 import React from 'react';
 import './Layout.scss';
-import '../../assets/scss/main.scss';
+import '../../scss/main.scss';
 import Navigation from '../Navigation/Navigation';
 import Header from '../Header/Header';
 

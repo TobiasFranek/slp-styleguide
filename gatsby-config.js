@@ -20,7 +20,7 @@ module.exports = {
 		  name: `markdown-pages`,
 		  path: `${__dirname}/src/markdown`,
 		},
-	  },
+	},
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
