@@ -209,3 +209,11 @@ code[class*="language-"] {
 		width: 150px;
 	}
 }
+
+.row {
+	div {
+		background: $primary-light;
+		border: 1px solid $light-grey;
+		padding: 20px;
+	}
+}
