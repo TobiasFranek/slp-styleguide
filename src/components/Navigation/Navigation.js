@@ -31,7 +31,7 @@ export default () => {
 	}
 
 	const buildList = (items) => items.map((item) => (
-		<li className="gatsby-nav__ul__li">
+		<li className="gatsby-nav__ul__li" key={item.path}>
 			<Link activeClassName="active" to={`${item.path}/`}>{item.title}</Link>
 		</li>
 	));
