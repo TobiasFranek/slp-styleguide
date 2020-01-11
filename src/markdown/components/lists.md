@@ -53,7 +53,7 @@ Lists are used to give different options to choose, for example removing an user
 
 #### Notes
 
-to use the list without the border just add **--without-border** to the item, this also resets the left padding.
+To use the list without the border just add **--without-border** to the item, this also resets the left padding.
 
 </div>
 
