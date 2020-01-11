@@ -20,7 +20,7 @@ There are 2 different versions of the Launch Countdown (black or white). White s
 	</div>
 </div>
 
-<div class="code-with-notes">
+<div class="code-with-notes margin-top-40">
 
 ```html
 <div class="launch-countdown">
