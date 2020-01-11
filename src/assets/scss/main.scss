@@ -46,3 +46,18 @@ h4 {
 
 	}
 }
+
+.gatsby-highlight {
+	max-width: 70%;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 6%) 40px 1fr repeat(5, 10%);
+	grid-template-areas: 
+		"nv nv nv . cn cn cn cn cn cn";
+}
+
+.main-content {
+	grid-area: cn;
+}

@@ -1,8 +1,8 @@
 ---
 path: "/components/buttons"
-date: "2019-05-04"
+date: "2020-01-11"
 title: "Buttons"
-category: "component"
+category: "components"
 ---
 
 # Buttons
@@ -17,11 +17,15 @@ This is the Default Button, which means there is no modifier applied, it is main
 </button>
 
 <button class="btn">
-	<span class="btn__item btn__item--border-bottom">Default</span>
+	<span class="btn__item btn__item--border-bottom">
+		Default
+	</span>
 </button>
 
 <button class="btn">
-	<span class="btn__item">Text with Icon</span>
+	<span class="btn__item">
+		Text with Icon
+	</span>
 	<span class="icon btn__item btn__icon">
 		<svg 
 			class="icon__svg" 
@@ -54,15 +58,21 @@ This is the Default Button, which means there is no modifier applied, it is main
 
 ```html
 <button class="btn">
-	<span class="btn__item">Default</span>
+	<span class="btn__item">
+		Default
+	</span>
 </button>
 
 <button class="btn">
-	<span class="btn__item btn__item--border-bottom">Default</span>
+	<span class="btn__item btn__item--border-bottom">
+		Default
+	</span>
 </button>
 
 <button class="btn">
-	<span class="btn__item">Text with Icon</span>
+	<span class="btn__item">
+		Text with Icon
+	</span>
 	<span class="icon btn__item btn__icon">
 		<svg>
 		</svg>

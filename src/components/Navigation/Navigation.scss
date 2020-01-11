@@ -1,0 +1,36 @@
+@import '~slp-base/src/scss/globals/variables.scss';
+
+
+.gatsby-nav {
+	grid-area: nv;
+	h2 {
+		font-size: 16px;
+		font-weight: 700;
+		margin-top: 0;
+	}
+	&__ul {
+		@include list-unstyled();
+		&__li {
+			margin-bottom: 10px;
+			a {
+				width: 100%;
+				display: block;
+				color: $font-color;
+				transition: all 0.4s ease;
+				padding: 16px 20px;
+				font-size: 18px;
+				font-weight: 300;
+				border-radius: 4px;
+				&:hover {
+					color: $font-color;
+					text-decoration: none;
+					background: $primary-light;
+				}
+				&.active {
+					background: $primary;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

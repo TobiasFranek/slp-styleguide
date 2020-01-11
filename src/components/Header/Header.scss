@@ -1,0 +1,34 @@
+@import '~slp-base/src/scss/globals/variables.scss';
+
+.gatsby-header {
+	height: 50px;
+	border-bottom: 1px solid $light-grey;
+	margin-bottom: 50px;
+	&__logo {
+		width: auto;
+		height: 22px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		&:hover {
+			color: $font-color;
+			text-decoration: none;
+		}
+	}
+
+	h1 {
+		font-weight: 300;
+		margin: 0;
+		font-size: 20px;
+		border: none;
+		color: $font-color;
+		margin-left: 10px;
+		&:hover, &:focus {
+			color: $font-color;
+			text-decoration: none;
+		}
+	}
+}
