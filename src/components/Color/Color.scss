@@ -1,0 +1,23 @@
+@import '~slp-base/src/scss/globals/variables.scss';
+
+.color {
+	color: #fff;
+	padding: 20px 25px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__name {
+		font-family: $objectivity;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&__code {
+		font-weight: 300;
+		font-size: 18px;
+	}
+}
