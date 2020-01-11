@@ -8,6 +8,9 @@
 		font-weight: 700;
 		margin-top: 0;
 	}
+	@include media-breakpoint-down(xs) {
+        margin-bottom: 20px;
+    }
 	&__ul {
 		@include list-unstyled();
 		&__li {

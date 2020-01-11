@@ -7,7 +7,7 @@ export default () => {
 	
 	return (
 		<header className="gatsby-header">
-			<div className="container">
+			<div className="content">
 				<Link to="/" className="gatsby-header__link">
 					<img className="gatsby-header__logo" src={logo} />
 					<h1> - Styleguide</h1>

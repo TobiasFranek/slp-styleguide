@@ -7,7 +7,7 @@ import Header from '../Header/Header';
 export default ({ children }) => (
 	<>
 		<Header />
-		<div className="wrapper container">
+		<div className="wrapper content">
 			<Navigation />
 			<main className="main-content">
 				{children}
