@@ -38,6 +38,9 @@ export default () => {
 
 	return (
 		<nav className="gatsby-nav">
+			<ul className="gatsby-nav__ul">
+				{buildList(nav['index'])}
+			</ul>
 			<h2>Foundations</h2>
 			<ul className="gatsby-nav__ul">
 				{buildList(nav['foundations'])}
