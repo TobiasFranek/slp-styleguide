@@ -215,3 +215,7 @@ code[class*="language-"] {
 	border: 1px solid $light-grey;
 	padding: 20px;
 }
+
+.no-scroll {
+	overflow: hidden;
+}
