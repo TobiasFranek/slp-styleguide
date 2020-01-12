@@ -117,7 +117,7 @@ Add the **--bottom** modifier to the body.
 		color: #fff;
 		z-index: 1001;
 		&:hover, &:focus {
-			.btn__icon:not(.btn__icon--floation) {
+			.btn__icon:not(.btn__icon--floating) {
 				color: #fff;
 			}
 		}	
