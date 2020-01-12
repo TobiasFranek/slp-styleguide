@@ -65,3 +65,49 @@ It is advised to add an overlay that displays the clicked image.
 </div>
 
 </div>
+
+## SCSS
+
+```css
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	place-items: start;
+	grid-gap: 20px;
+	@include media-breakpoint-down(md) {
+        grid-template-columns: 1fr 1fr;
+	}
+	@include media-breakpoint-down(xs) {
+        grid-template-columns: 1fr;
+	}
+	&__item {
+		width: 100%;
+		position: relative;
+		cursor: pointer;
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 1px;
+			height: 0;
+			padding-bottom: 100%;
+		}
+		&__image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			border-radius: $default-radius;
+			width: 100%;
+			height: 100%;
+			&--overlay {
+				position: static;
+				object-fit: unset;
+				width: 100%;
+				height: auto;
+				max-width: 80em;
+			}
+		}
+	}
+}
+```

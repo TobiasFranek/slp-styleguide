@@ -141,3 +141,115 @@ Works the same way as the smaller version. This version also has a litte navigat
 </div>
 
 </div>
+
+## SCSS
+
+```css
+.card {
+	width: 100%;
+	background: #fff;
+	border-radius: $default-radius;
+	box-shadow: $box-shadow-2;
+	padding: 20px;
+}
+
+$gap: 20px;
+
+.preview-card {
+	margin: $gap;
+	background-position: center;
+	background-size: cover;
+	border-radius: $default-radius;
+	position: relative;
+	&:hover {
+		text-decoration: none;
+	}
+	&--small {
+		@include max-min-height-width(200px);
+		@include media-breakpoint-down(sm) {
+			@include max-min-height-width(150px);
+		}
+	}
+	&--big {
+		flex-basis: calc(50% - #{$gap*2});
+		max-width: 300px;
+		@include media-breakpoint-down(sm) {
+			flex-basis: calc(50% - #{10px*2});
+			margin: 10px;
+		}
+		@include media-breakpoint-down(xs) {
+			flex-basis: calc(100%);
+			margin: 10px auto;
+		}
+		&:before{
+			content: '';
+			float: left;
+			padding-top: 100%;
+		}
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		top: 0;
+		left: 0;
+		border-radius: $default-radius;
+	}
+	&__nav {
+		display: flex;
+		justify-content: flex-end;
+		&__item {
+			color: #fff;
+			font-size: em(20);
+		}
+	}
+
+
+	&__content {
+		height: 100%;
+		padding: 20px;
+		position: relative;
+		z-index: 2;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include media-breakpoint-down(sm) {
+			padding: $default-radius;
+		}
+
+		&__title {
+			font-family: $objectivity;
+			font-size: em(20);
+			margin-bottom: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: em(18)
+			}
+
+			&--center {
+				text-align: center;
+			}
+		}
+		&__timer {
+			font-size: em(18);
+			@include media-breakpoint-down(sm) {
+				font-size: em(16);
+			}
+			&--live {
+				display: flex;
+				align-items: center;
+				&:before {
+					content: '';
+					width: 8px;
+					height: 8px;
+					border-radius: 100%;
+					margin-right: 5px;
+					background: $red;
+				}
+			}
+		}
+	}
+}
+```

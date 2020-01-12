@@ -58,3 +58,22 @@ To use the list without the border just add **--without-border** to the item, th
 </div>
 
 </div>
+
+## SCSS
+
+```css
+.ul {
+	@include list-unstyled();
+	&__li {
+		padding: em(10) em(5);
+		border-bottom: 1px solid $light-grey;
+		&:last-child {
+			border-bottom: none;
+		}
+		&--without-border {
+			border: none;
+			padding: em(10) 0;
+		}
+	}
+}
+```

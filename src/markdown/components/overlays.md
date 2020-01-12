@@ -92,3 +92,51 @@ Add the **--bottom** modifier to the body.
 </div>
 
 </div>
+
+## SCSS
+
+```css
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&--closed {
+		display: none;
+	}
+	&__close {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+		color: #fff;
+		z-index: 1001;
+		&:hover, &:focus {
+			.btn__icon:not(.btn__icon--floation) {
+				color: #fff;
+			}
+		}	
+	}
+	&__body {
+		max-width: 80%;
+		@include media-breakpoint-down(xs) {
+			max-width: 90%;
+		}
+		&--bottom {
+			position: absolute;
+			bottom: 0;
+			min-height: 70%;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			@include media-breakpoint-down(xs) {
+				max-width: 100%;
+			}
+		}
+	}
+}
+```

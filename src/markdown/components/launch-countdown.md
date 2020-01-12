@@ -43,3 +43,42 @@ If you want the white version just add a **--white** to the **timer** and **labe
 </div>
 
 </div>
+
+## SCSS
+
+```css
+.launch-countdown {
+	text-align: center;
+	&__label {
+		font-family: $objectivity;
+		font-size: em(24);
+		margin: 0;
+		display: inline-block;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			background: $font-color;
+			width: 100%;
+			height: 4px;
+			left: 0;
+			bottom: 4px;
+		}
+		&--white {
+			color: #fff;
+			&:after {
+				background: #fff;
+			}
+		}
+	}
+
+	&__timer {
+		font-weight: 300;
+		font-size: em(18);
+		margin: 0;
+		&--white {
+			color: #fff;
+		}
+	}
+}
+```

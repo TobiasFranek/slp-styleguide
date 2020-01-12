@@ -35,6 +35,16 @@ If you want to use icons, you should only use them as inline svgs. You also need
 </div>
 ```
 
+## SCSS
+
+```css
+.icon {
+	&__svg {
+		width: 1em;
+	}
+}
+```
+
 ## Used Icons
 
 All Icons used in this Project are [Font Awesome](https://fontawesome.com/) Icons
