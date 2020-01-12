@@ -1,3 +1,9 @@
+# SLP Styleguide
+
+This is only the gatsby repository and does not contain ANY CSS code that will be used in the project, it is only here to document the Base Components. Take a look at the [base repo](https://github.com/TobiasFranek/slp-base).
+
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

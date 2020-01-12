@@ -15,7 +15,7 @@ SLP, which stands for Space Launch Platform, is an app where you can find all up
 
 ## Installation
 
-All the base components are separated into one npm package. You can install it via npm. The package uses bootstrap reboot, grid, function, mixins and variables.
+All the base components are separated into one npm package. You can install it via npm. The package uses bootstrap reboot, grid, function, mixins and variables. Take a look at the [repo](https://github.com/TobiasFranek/slp-base)
 
 ```bash
 $ npm install slp-base
