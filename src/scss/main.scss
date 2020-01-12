@@ -210,10 +210,8 @@ code[class*="language-"] {
 	}
 }
 
-.row {
-	div {
-		background: $primary-light;
-		border: 1px solid $light-grey;
-		padding: 20px;
-	}
+.layout-bootstrap-grid {
+	background: $primary-light;
+	border: 1px solid $light-grey;
+	padding: 20px;
 }
